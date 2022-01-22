@@ -2,11 +2,20 @@ import './Header.css';
 import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import logo from './logo.jpeg';
-import {NavLink} from "react-router-dom";
-import React from "react";
-
+import {NavLink, useNavigate} from "react-router-dom";
+import React, {useContext} from "react";
+import {AuthContext} from "../../Auth/AuthContext";
 
 function Header() {
+    const navigate = useNavigate()
+    const auth = useContext(AuthContext)
+
+    const logoutHandler = event => {
+        event.preventDefault()
+        auth.logout()
+        navigate('/')
+    }
+
     return (
         <div className={'header__container'}>
             <div className={'header__title'}>
@@ -38,10 +47,17 @@ function Header() {
 
                 </div>
                 <div className={'header__profile'}>
+
                     <NavLink to={'/basket'} className={'sidebar__text-decoration'}>
                         <LocalGroceryStoreOutlinedIcon className={'header__profile-data'}/>
                     </NavLink>
-                    <p className={'header__profile-data'}>User</p>
+
+                        <p
+                            className={'header__profile-data'}
+                            onClick={logoutHandler}
+                        >
+                            Выйти</p>
+
                     <SettingsOutlinedIcon className={'header__profile-data'}/>
                 </div>
             </div>

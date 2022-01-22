@@ -2,8 +2,11 @@ import React from "react";
 import Header from "./Header/Header";
 import Sidebar from "./Sidebar/Sidebar";
 import './Layout.css'
+import Loader from "../Loader/Loader";
+import {useHttp} from "../hooks/http.hook";
 
 function Layout({children}) {
+    const {loading} = useHttp();
     return (
         <div>
             <Header/>
@@ -11,7 +14,7 @@ function Layout({children}) {
                 <div className={'white-blue'}>
                     <Sidebar/>
                 </div>
-                {children}
+                {loading ? <Loader/> : children}
             </div>
         </div>
     );

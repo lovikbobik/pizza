@@ -14,7 +14,7 @@ import {NavLink} from "react-router-dom";
 function Sidebar() {
     return (
         <div className={'sidebar'}>
-            <NavLink to={'/'} className={'sidebar__text-decoration'}>
+            <NavLink to={'/main'} className={'sidebar__text-decoration'}>
                 <SidebarItem Icon={LocalPizzaOutlinedIcon} text={"Пицца"}/>
             </NavLink>
 

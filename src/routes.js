@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navigate, Route, Routes} from 'react-router-dom'
+import {Navigate, Redirect, Route, Routes} from 'react-router-dom'
 import Layout from "./Layout/Layout";
 import MyMap from "./Information/MyMap";
 import Contacts from "./Information/Contacts";
