@@ -1,0 +1,20 @@
+.sidebarItem{
+    display: flex;
+    align-items: center;
+
+}
+.sidebarItem:hover{
+    background-color:  #eeebe8;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+}
+
+.sidebarItem > .MuiSvgIcon-root{
+    padding: 20px;
+
+}
+.sidebarItem > h2{
+    font-weight: 450;
+    font-size: 24px;
+    margin-right: 20px;
+}

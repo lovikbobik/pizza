@@ -1,0 +1,81 @@
+.header__container {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header__title {
+    background-color: dodgerblue;
+}
+
+.header__title > h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    margin: 0;
+
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #c2c2c2 1px solid;
+    background-color:white;
+    align-items: center;
+}
+
+.header__logo-fefu {
+    margin-left: 70px;
+    padding: 10px;
+}
+
+.header__profile {
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-right: 70px;
+    color: gray;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.header__profile-data {
+            color: gray;
+    padding: 10px;
+        }
+
+.header__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blue__text {
+    margin-right: 25px;
+    color: dodgerblue;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+}
+.blue__text > p{
+    padding: 10px;
+}
+
+.blue__text > p:hover{
+    background-color: #dcf1fa;
+    border-radius: 20px;
+    transition: background-color 200ms ease-out;
+}
+
+.header__profile-data:hover{
+    background-color: #e3e3e3;
+    border-radius: 20px;
+    transition: background-color 200ms ease-out;
+}

@@ -1,0 +1,12 @@
+.sidebar{
+    padding-right: 70px;
+    margin-left: 20px;
+    //border-right: darkgray 1px solid;
+    position: sticky;
+    top: 200px;
+    z-index: 1000;
+}
+.sidebar__text-decoration{
+    text-decoration: none;
+    color: black;
+}

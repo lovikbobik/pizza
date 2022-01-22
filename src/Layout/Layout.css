@@ -1,0 +1,15 @@
+.layout{
+    display: flex;
+    flex-direction: row;
+//background-color: #f2fafe;;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.white-blue{
+    display: flex;
+    min-height: 850px;
+    align-items: flex-start;
+}

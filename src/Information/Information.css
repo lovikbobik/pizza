@@ -1,0 +1,79 @@
+.contacts{
+    display: flex;
+    width: 100vw;
+    justify-content: center
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.contacts-container__info{
+    background-color: #ecebeb;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px ;
+    min-width: 70vh;
+    max-width: 70vh;
+    text-align: center;
+}
+
+.contacts-container__info > p{
+    font-size: 20px;
+}
+
+.contacts-container__desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-container__desc > a{
+    font-size: 17px;
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.contacts-container__icon1{
+    color: #c74c9f;
+    padding-right: 10px;
+}
+
+.contacts-container__icon2{
+    color:  dodgerblue;
+    padding-right: 10px;
+}
+
+.contacts-container__icon3{
+    color: #ff1e1e;
+    padding-right: 10px;
+}
+
+.quality > h2{
+    font-size: 38px;
+}
+
+.quality > p{
+    font-size: 23px;
+}
+
+.quality-content{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.quality-content__info{
+    width: 40%;
+    border-radius: 10px;
+    background: rgb(215, 242, 255);
+    padding: 26px 40px 39px 26px;
+    font-size: 19px;
+}
+
+.quality-content__info > h2{
+    color: dodgerblue;
+    font-size: 32px;
+    margin: 10px;
+}
