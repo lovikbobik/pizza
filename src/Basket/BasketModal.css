@@ -1,0 +1,32 @@
+.basketModal__body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.basketModal__border{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+.basketModal__input{
+    display: flex;
+    margin: 20px;
+    padding: 12px;
+    border-radius: 20px;
+    border: dodgerblue 2px solid;
+    outline: none;
+    font-size: 20px;
+}
+.button_buy{
+
+}
+
+.basketModal__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+

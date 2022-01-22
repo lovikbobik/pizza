@@ -1,0 +1,39 @@
+
+.categoryBox_content {
+
+    padding: 40px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 30px;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.categoryBox__image {
+    display: flex;
+    justify-content: center;
+}
+
+.categoryBox__name {
+
+    font-size: 20px;
+    text-align: center;
+}
+.categoryBox__name>p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.categoryBox__img-size {
+    max-width: 150px;
+    max-height: 150px;
+}

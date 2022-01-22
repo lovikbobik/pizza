@@ -1,0 +1,30 @@
+.main{
+    width: 100vw;
+}
+
+.main__poster{
+    max-width: 1000px;
+    border-radius: 40px;
+    display:block;
+    padding-top: 20px;
+    margin:auto;
+
+}
+.main__pizza-tabs{
+    border:  cornflowerblue 1px solid;
+    border-radius: 30px;
+    background-color: #f2fafe;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tab{
+    padding: 10px;
+}
+ .main__pizza{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     justify-content: space-evenly;
+ }

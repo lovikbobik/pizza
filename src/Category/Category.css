@@ -1,0 +1,14 @@
+.category-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.category{
+    justify-content: center;
+    margin: 20px;
+    padding-top: 30px;
+    width: 100vw;
+    background-color: #f2fafe;
+    border-radius: 30px;
+}
