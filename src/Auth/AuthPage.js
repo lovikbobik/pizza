@@ -1,7 +1,9 @@
-import React, {useContext, useEffect, useState} from 'react'
+import React, {useCallback, useContext, useEffect, useState} from 'react'
 import {useHttp} from '../hooks/http.hook'
 import {useMessage} from '../hooks/message.hook'
 import {AuthContext} from './AuthContext'
+import 'materialize-css'
+
 
 export const AuthPage = () => {
     const auth = useContext(AuthContext)
@@ -17,30 +19,26 @@ export const AuthPage = () => {
     }, [error, message, clearError])
 
     useEffect(() => {
-        // window.M.updateTextFields()
+        window.M.updateTextFields()
     }, [])
 
     const changeHandler = event => {
-        setForm({...form, [event.target.name]: event.target.value})
+        setForm({ ...form, [event.target.name]: event.target.value })
     }
 
     const registerHandler = async () => {
         try {
-            const data = await request('http://localhost:5000/api/auth/register', 'POST', {...form})
-            console.log('Data', data)
+            const data = await request('/api/auth/register', 'POST', {...form})
             message(data.message)
-        } catch (e) {
-        }
+        } catch (e) {}
     }
 
     const loginHandler = async () => {
         try {
-            const data = await request('http://localhost:5000/api/auth/login', 'POST', {...form})
+            const data = await request('/api/auth/login', 'POST', {...form})
             auth.login(data.token, data.userId)
-        } catch (e) {
-        }
+        } catch (e) {}
     }
-
     return (
         <div>
             <div>
@@ -75,9 +73,9 @@ export const AuthPage = () => {
                 </div>
                 <div>
                     <button
-                        style={{marginRight: 10}}
                         disabled={loading}
                         onClick={loginHandler}
+
                     >
                         Войти
                     </button>
